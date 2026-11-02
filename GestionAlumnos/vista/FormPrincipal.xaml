@@ -1,0 +1,29 @@
+﻿<Window x:Name="FormularioPrincipal" x:Class="GestionAlumnos.vista.FormPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionAlumnos.vista"
+        mc:Ignorable="d"
+        Title="Formulario Princial" Height="364" Width="557" Loaded="FormularioPrincipal_Loaded" ResizeMode="NoResize">
+
+    <Grid Background="#FFF0F0F0" Margin="0,0,0,0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto" MinHeight="225" />
+            <RowDefinition Height="Auto" MinHeight="72" />
+        </Grid.RowDefinitions>
+
+
+        <Menu Height="20" VerticalAlignment="Center" Margin="0,0,491,0" >
+            <MenuItem Header="_Alumnos"  >
+                <MenuItem x:Name="menuItemAlta" Header="_Alta" Click="menuItemAlta_Click" />
+                <Separator />
+                <MenuItem x:Name="menuItemSalir" Header="_Salir" Click="menuItemSalir_Click"/>
+            </MenuItem>
+        </Menu>
+        <DataGrid x:Name="dgAlumnos" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="21,35,21,60" CanUserAddRows="False" AutoGenerateColumns="False"/>
+        <Button x:Name="btnSalir" Content="Salir" Margin="444,5,21,21" Grid.Row="2" Click="btnSalir_Click" RenderTransformOrigin="2.732,0.405"/>
+    </Grid>
+</Window>

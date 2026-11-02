@@ -1,0 +1,23 @@
+﻿<Window x:Class="GestionAlumnos.vista.FrmAltaAlumno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionAlumnos.vista"
+        mc:Ignorable="d"
+        Title="FrmAltaAlumno" Height="283" Width="399" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid Background="#FFF0F0F0">
+        <Label x:Name="lblNombre" Content="Nombre" HorizontalAlignment="Left" Margin="46,85,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="lblCurso" Content="Curso" HorizontalAlignment="Left" Margin="46,131,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="lblTituloAltaAlumno" Content="ALTA ALUMNO" HorizontalAlignment="Left" Margin="25,22,0,0" VerticalAlignment="Top" Width="344" HorizontalContentAlignment="Center" FontSize="16" FontWeight="Bold">
+            <Label.FocusVisualStyle>
+                <Style/>
+            </Label.FocusVisualStyle>
+        </Label>
+        <Button x:Name="btnAltaAlumno" Content="Alta" HorizontalAlignment="Left" Margin="294,203,0,0" VerticalAlignment="Top" Width="76" Height="27" Click="btnAltaAlumno_Click"/>
+        <Button x:Name="btnAltaAlumnoCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="202,203,0,0" VerticalAlignment="Top" Width="76" Height="27" Click="btnAltaAlumnoCancelar_Click"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="161,93,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="209" Height="18"/>
+        <TextBox x:Name="txtCurso" HorizontalAlignment="Left" Margin="161,139,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="209" Height="18"/>
+
+    </Grid>
+</Window>
